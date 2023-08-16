@@ -10,8 +10,9 @@ const fileUpload = require('express-fileupload');
 const axios = require('axios');
 const mime = require('mime-types');
 
-const port = process.env.PORT || 8001;
+const port = process.env.PORT || 8001; //port server
 
+//Membuat instance aplikasi Express dan server HTTP:
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
@@ -32,6 +33,7 @@ app.use(fileUpload({
   debug: false
 }));
 
+//Menentukan route untuk beranda:
 app.get('/', (req, res) => {
   res.sendFile('index.html', {
     root: __dirname

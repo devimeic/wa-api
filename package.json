@@ -4,8 +4,7 @@
   "description": "Whatsapp api ",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js" 
-     
+    "start": "node app.js"
   },
   "keywords": [
     "whatsapp-api",
@@ -23,5 +22,5 @@
     "qrcode": "^1.4.4",
     "socket.io": "2.3.0",
     "whatsapp-web.js": "^1.20.0"
-  } 
+  }
 }
